@@ -11,7 +11,7 @@ import { JQ_TOKEN } from './index'
                         <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
                         <h4 class="modal-title">{{title}}</h4>
                     </div>
-                    <div class="modal-body" (click)="closeModal">
+                    <div class="modal-body" (click)="closeModal()">
                         <ng-content></ng-content>
                     </div>
                 </div>
@@ -24,11 +24,14 @@ import { JQ_TOKEN } from './index'
 export class SimpleModalComponent {
     @Input() title: string
     @Input() elementId: string
+    @Input() closeOnBodyClick: string
     @ViewChild('modalContainer') containerEl: ElementRef
 
     constructor(@Inject(JQ_TOKEN) private $: any) {}
 
     closeModal() {
-        this.$(this.containerEl.nativeElement).modal('hide')
+        if (this.closeOnBodyClick.toLocaleLowerCase() === "true") {
+            this.$(this.containerEl.nativeElement).modal('hide')
+        }
     }
 }
