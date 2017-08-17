@@ -25,7 +25,9 @@ import {
     EventListResolver,
     CreateSessionComponent,
     SessionListComponent,
-    DurationPipe } from './events/index'
+    DurationPipe,
+    UpvoteComponent,
+    VoterService } from './events/index'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 declare let toastr : Toastr
@@ -51,7 +53,8 @@ declare let jQuery : Object
         CollapsibleWellComponent,
         DurationPipe,
         SimpleModalComponent,
-        ModalTriggerDirective
+        ModalTriggerDirective,
+        UpvoteComponent
     ], 
     providers: [
         EventService,
@@ -69,7 +72,8 @@ declare let jQuery : Object
             useValue: checkDirtyState
         },
         EventListResolver,
-        AuthService
+        AuthService,
+        VoterService
     ],
     bootstrap: [EventsAppComponent]
 })
