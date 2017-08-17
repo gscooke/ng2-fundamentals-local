@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core'
 @Component({
     selector: 'simple-modal',
     template: `
-        <div id="simple-modal" class="modal-fade" tabIndex="-1">
+        <div id="simple-modal" class="modal fade" tabIndex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
