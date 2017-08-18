@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { RouterModule } from '@angular/router'
+import { HttpModule } from '@angular/http'
 
 import { TOASTR_TOKEN,
          Toastr, 
@@ -39,7 +40,8 @@ declare let jQuery : Object
         BrowserModule,
         RouterModule.forRoot(appRoutes),
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        HttpModule
     ],
     declarations: [
         EventsAppComponent,
