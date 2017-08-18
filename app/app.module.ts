@@ -27,7 +27,8 @@ import {
     SessionListComponent,
     DurationPipe,
     UpvoteComponent,
-    VoterService } from './events/index'
+    VoterService,
+    LocationValidator } from './events/index'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 declare let toastr : Toastr
@@ -54,7 +55,8 @@ declare let jQuery : Object
         DurationPipe,
         SimpleModalComponent,
         ModalTriggerDirective,
-        UpvoteComponent
+        UpvoteComponent,
+        LocationValidator
     ], 
     providers: [
         EventService,
