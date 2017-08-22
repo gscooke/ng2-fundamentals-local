@@ -36,11 +36,6 @@ export class EventService {
       }) // Note that JSON.stringify is optional in later versions of angular
     }
 
-    updateEvent(event) {
-      let index = EVENTS.findIndex(x => x.id = event.id)
-      EVENTS[index] = event
-    }
-
     searchSessions(searchTerm: string) {
       var term = searchTerm.toLocaleLowerCase()
       var results: ISession[] = []
