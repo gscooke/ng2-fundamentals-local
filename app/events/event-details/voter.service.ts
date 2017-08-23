@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core'
 import { ISession } from '../shared/index'
-import { Subject, Observable } from 'rxjs/RX'
+import { Subject, Observable } from 'rxjs/Rx'
 import { Http, Response, Headers, RequestOptions } from '@angular/http'
 
 @Injectable()
