@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core'
 import { IUser } from './user.model'
 import { Router, ActivatedRouteSnapshot, CanActivate } from '@angular/router'
-import { Subject, Observable } from 'rxjs/RX'
+import { Subject, Observable } from 'rxjs/Rx'
 import { Http, Response, Headers, RequestOptions } from '@angular/http'
 
 @Injectable()
