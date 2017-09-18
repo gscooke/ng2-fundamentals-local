@@ -1,4 +1,4 @@
-export * from './jQuery.service'
+export * from './Jquery.service'
 export * from './toastr.service'
 export * from './collapsible-well.component'
 export * from './simple-modal.component'

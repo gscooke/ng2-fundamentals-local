@@ -29,14 +29,14 @@
   },
   "devDependencies": {
     "@types/core-js": "0.9.34",
-    "@types/jasmine": "^2.5.54",
+    "@types/jasmine": "^2.5.51",
     "@types/node": "6.0.46",
     "concurrently": "3.2.0",
     "jasmine-core": "^2.7.0",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^1.1.0",
-    "typescript": "2.1.1"
+    "typescript": "2.4.2"
   },
   "repository": {}
 }

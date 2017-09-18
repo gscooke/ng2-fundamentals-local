@@ -7,7 +7,7 @@ describe('SessionListComponent', () => {
 
     beforeEach(() => {
         component = new SessionListComponent(mockAuthService, mockVoterService)
-    })
+    })   
 
     describe('ngOnChanges', () => {
         it('should filter the sessions correctly', () => {
@@ -19,7 +19,7 @@ describe('SessionListComponent', () => {
             component.sortBy = 'name'
             component.eventId = 3
 
-            component.ngOnChanges()
+            component.ngOnChanges()  
 
             expect(component.visibleSessions.length).toBe(2)
         })
